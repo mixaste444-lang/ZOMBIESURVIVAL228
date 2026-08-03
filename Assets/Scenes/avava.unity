@@ -130,8 +130,8 @@ GameObject:
   - component: {fileID: 80391943}
   - component: {fileID: 80391942}
   - component: {fileID: 80391941}
-  - component: {fileID: 80391944}
   - component: {fileID: 80391945}
+  - component: {fileID: 80391946}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -212,20 +212,6 @@ Transform:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &80391944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80391939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c68b58b60d954749a803b285d65998a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 5
-  gravity: -9.81
 --- !u!143 &80391945
 CharacterController:
   m_ObjectHideFlags: 0
@@ -251,6 +237,21 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &80391946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80391939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277a41d3f1c4d9f4b9fcaa53705889bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  speed: 5
+  jumpHeight: 3
+  gravity: -9.81
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
